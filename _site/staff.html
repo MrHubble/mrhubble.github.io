@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Staff</title>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+
+<body>
+  <nav>
+  
+  <a href="/" >Home</a>
+  
+  <a href="/about.html" >About</a>
+  
+  <a href="/blog.html" >Blog</a>
+  
+  <a href="/staff.html" class="current" >Staff</a>
+  
+</nav>
+  <h1>Staff</h1>
+
+<pre>
+    site: []
+    page: {&quot;layout&quot;:&quot;default&quot;,&quot;title&quot;:&quot;Staff&quot;,&quot;content&quot;:&quot;&lt;h1&gt;Staff&lt;/h1&gt;\n\n&lt;pre&gt;\n    site: {{ site.authors | jsonify | escape }}\n    page: {{ page | jsonify | escape }}\n    layout: {{ layout | jsonify | escape }}\n    content: {{ content | jsonify | escape }}\n    paginator: {{ paginator | jsonify | escape }}\n&lt;/pre&gt;\n\n&lt;ul&gt;\n  {% for author in site.authors %}\n  &lt;li&gt;\n    &lt;h2&gt;&lt;a href=\&quot;{{ author.url }}\&quot;&gt;{{ author.name }}&lt;/a&gt;&lt;/h2&gt;\n    &lt;h3&gt;{{ author.position }}&lt;/h3&gt;\n    &lt;p&gt;{{ author.content | markdownify }}&lt;/p&gt;\n  &lt;/li&gt;\n  {% endfor %}\n&lt;/ul&gt;&quot;,&quot;dir&quot;:&quot;/&quot;,&quot;name&quot;:&quot;staff.html&quot;,&quot;path&quot;:&quot;staff.html&quot;,&quot;url&quot;:&quot;/staff.html&quot;}
+    layout: {}
+    content: &quot;&lt;h1&gt;hello world!&lt;/h1&gt;&quot;
+    paginator: null
+</pre>
+
+<ul>
+  
+</ul>
+</body>
+
+</html>

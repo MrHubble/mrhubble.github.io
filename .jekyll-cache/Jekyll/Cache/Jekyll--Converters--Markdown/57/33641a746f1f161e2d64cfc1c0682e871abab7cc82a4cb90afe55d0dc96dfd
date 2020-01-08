@@ -1,0 +1,11 @@
+I"z<h1 id="about-page">About page</h1>
+
+<p>It uses <strong>markdown</strong></p>
+
+<p>Lets try a <em>code sample</em>:</p>
+
+<div class="language-rb highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">some_ruby_code</span>
+  <span class="c1"># sure feels good</span>
+<span class="k">end</span>
+</code></pre></div></div>
+:ET
