@@ -1,13 +1,13 @@
 collections:
-  authors:
+  rails:
     output: true
 
 defaults:
   - scope:
       path: ""
-      type: "authors"
+      type: "rails"
     values:
-      layout: "author"
+      layout: "rails"
   - scope:
       path: ""
       type: "posts"

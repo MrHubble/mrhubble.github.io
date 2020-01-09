@@ -1,0 +1,21 @@
+---
+layout: default
+title: Rails
+---
+<h1>Rails</h1>
+
+<pre>
+    site: {{ site.rails | jsonify | escape }}
+    page: {{ page | jsonify | escape }}
+    layout: {{ layout | jsonify | escape }}
+    content: {{ content | jsonify | escape }}
+    paginator: {{ paginator | jsonify | escape }}
+</pre>
+
+<ul>
+  {% for rail in site.rails %}
+  <li>
+    <h2><a href="{{ rail.url }}">{{ rail.title }}</a></h2>
+  </li>
+  {% endfor %}
+</ul>

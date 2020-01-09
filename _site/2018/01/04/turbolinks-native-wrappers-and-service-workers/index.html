@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Turbolinks native wrappers and Service Workers for offline first app</title>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+
+<body>
+  <nav>
+  
+  <a href="/" >Home</a>
+  
+  <a href="/about.html" >About</a>
+  
+  <a href="/blog.html" >Blog</a>
+  
+  <a href="/staff.html" >Staff</a>
+  
+  <a href="/rails.html" >Rails</a>
+  
+</nav>
+  <h1>Turbolinks native wrappers and Service Workers for offline first app</h1>
+
+<p>
+  04 Jan 2018
+  
+  
+</p>
+
+<p>We had a need for an “offline first” mobile app. Being part of a small team, if we can make this app utilising much of our existing codebase then all the better.</p>
+
+<p>With the release of Turbolinks 5 came the release of the iOS and Android native wrappers for using your existing codebase with Turbolinks to release a hybrid app.</p>
+
+<p>Unfortunately, at this point in time (Jan, 2018),  <a href="https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorker">ServiceWorkers currently aren’t supported on iOS or Android webviews</a> , so it can’t be used in combination with Turbolinks for offline first apps.</p>
+
+<p>We instead decided to use React Native with <a href="https://realm.io/products/realm-database">Realm Database</a> and our existing Rails API.</p>
+
+<p>References:</p>
+
+<p>https://github.com/turbolinks/turbolinks/issues/196</p>
+
+<p>https://gorails.com/episodes/how-to-use-turbolinks-clearCache#comment-3169959601</p>
+
+</body>
+
+</html>
