@@ -1,6 +1,8 @@
 collections:
   rails:
     output: true
+  react_native:
+    output: true
 
 defaults:
   - scope:

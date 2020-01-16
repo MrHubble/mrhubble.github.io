@@ -2,15 +2,6 @@
 layout: default
 title: Rails
 ---
-<h1>Rails</h1>
-
-<pre>
-    site: {{ site.rails | jsonify | escape }}
-    page: {{ page | jsonify | escape }}
-    layout: {{ layout | jsonify | escape }}
-    content: {{ content | jsonify | escape }}
-    paginator: {{ paginator | jsonify | escape }}
-</pre>
 
 <ul>
   {% for rail in site.rails %}
