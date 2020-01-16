@@ -7,7 +7,7 @@ defaults:
       path: ""
       type: "rails"
     values:
-      layout: "rails"
+      layout: "default"
   - scope:
       path: ""
       type: "posts"
@@ -17,3 +17,6 @@ defaults:
       path: ""
     values:
       layout: "default"
+
+# Build settings
+theme: minima
