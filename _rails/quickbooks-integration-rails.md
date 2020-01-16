@@ -3,9 +3,9 @@ id: 20
 title: Quickbooks integration with Rails
 date: 2018-02-02T00:14:36+00:00
 author: finally
-layout: post
+layout: rails
 guid: https://www.mrcodebot.com/?p=20
-permalink: /2018/02/02/quickbooks-integration-rails/
+permalink: /quickbooks-integration-rails/
 dsq_thread_id:
   - "6507847517"
 categories:
@@ -18,17 +18,24 @@ Previous versions of the API used XML, whereas the current version uses JSON.
 The most popular Ruby gem is <a href="https://github.com/ruckus/quickbooks-ruby" target="_blank" rel="noopener">quickbooks-ruby</a>, however:
 
 > Intuit started the v3 API supporting both XML and JSON. However, new v3 API services such as Tax Service will only support JSON. This gem has roots in the v2 API, which was XML only, and hence was constructed supporting XML only.
-> 
+>
 > That said, the Tax Service is supported and other new v3-API-JSON-only services will be supported. Ideally, we would like to fully support JSON for all entities and services for the 1.0.0 release. Please jump in and contribute to help that aim.
 
-<a href="https://github.com/ruckus/quickbooks-ruby#json-support" target="_blank" rel="noopener">quickbooks-ruby#json-support</a>
+<a href="https://github.com/ruckus/quickbooks-ruby#json-support" target="_blank"
+rel="noopener">quickbooks-ruby#json-support</a>
+
+```rb
+def this_is_a_test
+  some_func
+end
+```
 
 The main problem with this gem is that oauth2 is currently not supported, however, it should be merged soon: <a href="https://github.com/ruckus/quickbooks-ruby/issues/389" target="_blank" rel="noopener">quickbooks-ruby/issues/389</a>
 
 I think the oauth2 branch of quickbooks-ruby will use <a href="https://rubygems.org/gems/oauth2/" target="_blank" rel="noopener">the oauth2 gem</a>. Whereas the author of qbo_api prefers <a href="https://rubygems.org/gems/rack-oauth2:" target="_blank" rel="noopener">rack-oauth2</a>
 
 > I really won&#8217;t bother trying to re-invent the wheel by rolling your own OAuth2 code. That said, the OAuth2 2-legged process is simpler than the 3-legged OAuth 1a process and if you do want to roll your own OAuth2 code take a look at Intuit&#8217;s Python example for a good starting point.
-> 
+>
 > As for me, I&#8217;ll choose to leverage the Rack-OAuth2 gem as I like its ability to directly set endpoints.
 
 [access-the-quickbooks-online-api-with-oauth2](http://minimul.com/access-the-quickbooks-online-api-with-oauth2.html)
@@ -39,9 +46,9 @@ You&#8217;re going to need to create a Quickbooks developer account, follow a gu
 
 So I&#8217;m going to take parts from:
 
-  * https://developer.intuit.com/docs/00\_quickbooks\_online/2\_build/10\_authentication\_and\_authorization/10\_oauth\_2.0 
-  * https://github.com/minimul/qbo_api/blob/master/example/app.rb 
-  * https://github.com/ruckus/quickbooks-ruby/blob/389-oauth2/README.md 
+  * https://developer.intuit.com/docs/00\_quickbooks\_online/2\_build/10\_authentication\_and\_authorization/10\_oauth\_2.0
+  * https://github.com/minimul/qbo_api/blob/master/example/app.rb
+  * https://github.com/ruckus/quickbooks-ruby/blob/389-oauth2/README.md
   * https://github.com/IntuitDeveloper/OAuth2\_RubyOnRails/blob/master/OAuth2/app/controllers/token\_controller.rb
 
 ## 1&#46; Initiating the authorization request
@@ -80,5 +87,5 @@ Encrypt and store the refresh token and realmId in persistent memory. Encrypt th
 
 ## 5&#46; Moving to production
 
-  * Install ngrok. 
+  * Install ngrok.
   * Run `ngrok http 3000 -region=au` (use your region) and add the URI as a redirect_uri in Quickbooks dev tools for the Production environment.

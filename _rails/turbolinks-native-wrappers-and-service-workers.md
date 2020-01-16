@@ -3,13 +3,13 @@ id: 5
 title: Turbolinks native wrappers and Service Workers for offline first app
 date: 2018-01-04T00:41:28+00:00
 author: finally
-layout: post
+layout: rails
 guid: https://www.mrcodebot.com/?p=5
-permalink: /2018/01/04/turbolinks-native-wrappers-and-service-workers/
+permalink: /turbolinks-native-wrappers-and-service-workers/
 dsq_thread_id:
   - "6389914126"
 categories:
-  - Uncategorized
+  - Rails
 ---
 We had a need for an &#8220;offline first&#8221; mobile app. Being part of a small team, if we can make this app utilising much of our existing codebase then all the better.
 
