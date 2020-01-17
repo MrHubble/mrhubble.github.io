@@ -1,3 +1,25 @@
 .current {
   color: green;
 }
+
+.main-heading {
+color: #030508;
+padding-top: 20px;
+padding-bottom: 20px;
+max-width: 100%;
+font-size: var(--var-size);
+letter-spacing: var(--var-letterSpacing);
+line-height: var(--var-lineHeight);
+font-variation-settings: 'wght' var(--var-weight), 'slnt' var(--var-slant);
+}
+
+.secondary-heading {
+  color: #010101;
+  font-size:81px;
+  letter-spacing: -0.055em;
+  line-height: 0.9em;
+  text-indent: -0.03em;
+  margin-bottom: 4rem;
+  margin-top: 10px;
+  font-weight: 740;
+}

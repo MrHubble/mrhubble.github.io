@@ -3,7 +3,9 @@ layout: default
 title: Home
 ---
 
-<h1>It's only code</h1>
+<div class="main-heading" style="--var-weight: 900; --var-slant: -10; --var-size: 40px; --var-letterSpacing: -0.006em; --var-lineHeight: 1.24;">
+  IT'S ONLY CODE
+  </div>
 
 I have a tendency to take code related decisions too seriously. There are more important things in life than code.
 
