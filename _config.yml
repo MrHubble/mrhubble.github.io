@@ -10,6 +10,7 @@ defaults:
       type: "rails"
     values:
       layout: "default"
+      title: 'MrCodebot'
   - scope:
       path: ""
       type: "posts"
@@ -19,6 +20,7 @@ defaults:
       path: ""
     values:
       layout: "default"
+      title: 'MrCodebot'
 
 # Build settings
 theme: minima
