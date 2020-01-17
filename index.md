@@ -15,6 +15,12 @@ One of the most calming things I've ever read in a dev article was from [Corey H
 
 >And, most importantly, **the world won't end if you do.**
 
+<div class="secondary-heading">
+  We all have a need for autonomy
+</div>
+
+
+<blockquote class="twitter-tweet" data-conversation="none" data-dnt="true" data-theme="light"><p lang="en" dir="ltr">People who make software deserves to be part of the full story. To help flesh out the plot and the characters. If we reduce them to mere implementors, we&#39;ve lost the plot. We must all engage our autonomy. No one wants to be a code monkey.</p>&mdash; DHH (@dhh) <a href="https://twitter.com/dhh/status/1196857482108256256?ref_src=twsrc%5Etfw">November 19, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 <br>
 <div class="container">

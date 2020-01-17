@@ -14,12 +14,13 @@ font-variation-settings: 'wght' var(--var-weight), 'slnt' var(--var-slant);
 }
 
 .secondary-heading {
+  padding-top: 20px;
   color: #010101;
-  font-size:81px;
+  font-size:30px;
   letter-spacing: -0.055em;
   line-height: 0.9em;
   text-indent: -0.03em;
-  margin-bottom: 4rem;
+  margin-bottom: 1rem;
   margin-top: 10px;
   font-weight: 740;
 }
