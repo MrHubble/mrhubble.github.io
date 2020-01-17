@@ -28,3 +28,8 @@ theme: minima
 sass:
   sass_dir: _sass
   style: compressed
+
+header_pages:
+  - index.md
+  - rails.html
+  - react_native.html
